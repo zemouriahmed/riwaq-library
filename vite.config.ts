@@ -4,7 +4,8 @@ import path from 'node:path'
 
 // On GitHub Pages the site lives under /<repository-name>/ ; the deploy workflow sets VITE_BASE.
 export default defineConfig({
-  base: process.env.VITE_BASE ?? '/',
+   base: '/riwaq-library/',
   plugins: [react()],
   resolve: { alias: { '@': path.resolve(__dirname, 'src') } },
 })
+
